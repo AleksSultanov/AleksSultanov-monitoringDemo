@@ -1,0 +1,97 @@
+@import "../../styles/variables.css";
+:root {
+  --text-light: #e0e0e0; /* Основной цвет текста */
+  
+  /* Цвета статусов */
+  --status-success: #4caf50; /* Зелёный */
+  --status-warning: #ff9800; /* Оранжевый */
+  --status-error: #f44336; /* Красный */
+  
+  /* Цвета текста для контраста */
+  --text-success: #e8f5e9; /* Светлый оттенок для зелёного */
+  --text-warning: #fff8e1; /* Светлый оттенок для оранжевого */
+  --text-error: #ffebee; /* Светлый оттенок для красного */
+}
+
+
+.card{
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение */
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  min-height: 250px;
+}
+
+.cardMini{
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение */
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  min-height: 150px;
+}
+
+.card_header {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color:var(--text-light);
+}
+
+.card_text {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color:var(--text-light);
+}
+
+.card_count {
+  margin-bottom: 0.5rem;
+  color: #f4f4f8;
+}
+
+
+/* Зелёный — Успех/Норма */
+.status_ok {
+  background-color: rgba(76, 175, 80, 0.15);  
+  border-left: 20px solid var(--status-success);  
+  color: var(--text-success);
+}  
+.status_ok:hover {
+  background-color: var(--status-success);}
+
+/* Оранжевый — Предупреждение */
+.status_warning  {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: var(--text-warning);
+  border-left: 20px solid var(--status-warning);  
+}
+.status_warning:hover {
+  background-color: var(--status-warning);
+}
+
+/* Красный — Ошибка/Критично */
+.status_error {
+  background-color: var(--status-error);
+  color: var(--text-error);
+}
+.status_error:hover {
+  background-color: rgba(244, 67, 54, 0.25);
+  border-left: 10px solid var(--status-error);
+}
+
+.card_chart{
+  margin-top: auto; /* Отталкивает элемент вниз */
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 4px;
+  background-color: #2a2a3a;
+  color:var(--text-light); 
+}

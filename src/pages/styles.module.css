@@ -1,0 +1,24 @@
+.panel{
+  padding: 2rem;
+}
+.dashboard {
+  margin: 20;
+  padding: 100; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-columns: 1fr; /* Каждая колонка занимает равную долю пространства */ 
+  gap: 1rem; /* Отступы между ячейками */
+    
+}
+
+.header {
+  background-color: #2a2a3a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.separator {
+  min-height: 50px;
+}
