@@ -1,1 +1,1 @@
-export const BASE_PAGE = "/MonitoringDemo/";
+export const BASE_PAGE = "/AleksSultanov-monitoringDemo/";
