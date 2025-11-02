@@ -19,9 +19,7 @@
     // the correct url will be waiting in the browser's history for
     // the single page app to route accordingly.
     (function (l) {
-      console.log("before");
-      console.log(l);
-      console.log(window.history.state);
+      console.log("index", l);
       if (l.search[1] === '/') {
         var decoded = l.search.slice(1).split('&').map(function (s) {
           return s.replace(/~and~/g, '&')
@@ -30,9 +28,6 @@
           l.pathname.slice(0, -1) + decoded + l.hash
         );
       }
-      console.log("after");
-      console.log(l);
-      console.log(window.history.state);
     }(window.location))
   </script>
   <!-- End Single Page Apps for GitHub Pages -->
